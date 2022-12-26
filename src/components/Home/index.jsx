@@ -1,10 +1,10 @@
 import React from 'react'
 import { Container } from './style'
 
-const index = () => {
+const Home = () => {
   return (
-    <Container>index</Container>
+    <Container>Home</Container>
   )
 }
 
-export default index
+export default Home

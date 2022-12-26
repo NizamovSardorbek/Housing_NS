@@ -1,10 +1,9 @@
 import React from 'react'
 import { Container } from './style'
-
-function index() {
+const Properties = () => {
   return (
-    <Container>index</Container>
+    <Container>Properties</Container>
   )
 }
 
-export default index
+export default Properties
