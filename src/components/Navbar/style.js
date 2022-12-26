@@ -2,8 +2,9 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import {ReactComponent as logoImg} from "../../assets/logo.svg"
 const Container = styled.div`
-
-
+display: flex;
+justify-content: center;
+flex-direction: column;
 `
 
 const Wrapper = styled.div`
@@ -16,12 +17,16 @@ color: #ffffff;
 padding: var(--padding);
 height: 64px;
 font-size: 16px;
+max-width: 1440px;
 `
 
  const Section = styled.div`
 display: flex;
 align-items: center;
-cursor: ${({logo})=> logo &&'pointer'}
+cursor: ${({logo})=> logo &&'pointer'};
+.active{
+    color: #b8ff06;
+}
 `
 const Logo = styled(logoImg)`
 width: 30px;

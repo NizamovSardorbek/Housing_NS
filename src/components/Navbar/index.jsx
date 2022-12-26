@@ -11,9 +11,9 @@ const navigate = useNavigate()
           <Logo /> <h3>Houzing</h3>
         </Section>
         <Section>
-          {navbar.map(({ title, path, id }) => {
+          {navbar.map(({ title, path},index) => {
             return (
-              <Link key={id} to={path}>
+              <Link className={({isActive})=>isActive && 'active'} key={index} to={path}>
                 {title}
               </Link>
             );
