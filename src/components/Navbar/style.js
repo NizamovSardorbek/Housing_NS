@@ -7,17 +7,25 @@ justify-content: center;
 flex-direction: column;
 `
 
+const Main = styled.div`
+display: flex;
+width: 100%;
+background-color: red;
+`
+
 const Wrapper = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
 
-background: var(--colorPrimary);
+background-color: #0D263B;
 color: #ffffff;
 padding: var(--padding);
 height: 64px;
 font-size: 16px;
-max-width: 1440px;
+width: 100%;
+
+/* max-width: 1440px; */
 `
 
  const Section = styled.div`
@@ -42,4 +50,4 @@ padding: 32px;
 color: #ffff;
 `
 
-export {Container,Wrapper,Section,Logo,Link}
+export {Container,Wrapper,Section,Logo,Link,Main}

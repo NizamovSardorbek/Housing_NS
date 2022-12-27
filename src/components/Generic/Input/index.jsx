@@ -1,18 +1,33 @@
 import React from "react";
-import { Container } from "./style";
+import { Icons } from "../../Filter/style";
+import { Container, Icon, Wrapper } from "./style";
 
-const Input = ({ type, onChange, value, defaultValue, placeholder, name ,width,height}) => {
+const Input = ({
+  type,
+  icon,
+  onChange,
+  value,
+  defaultValue,
+  placeholder,
+  name,
+  width,
+  height,
+}) => {
   return (
-    <Container
-      placeholder={placeholder}
-      value={value}
-      defaultValue={defaultValue}
-      name={name}
-      onChange={onChange}
-      type={type}
-      width={width}
-      height={height}
-    />
+    <Wrapper>
+      <Icon>{<Icons.Houses/>}</Icon>
+      <Container
+        placeholder={placeholder}
+        value={value}
+        defaultValue={defaultValue}
+        name={name}
+        onChange={onChange}
+        type={type}
+        width={width}
+        height={height}
+        icon={icon}
+      />
+    </Wrapper>
   );
 };
 

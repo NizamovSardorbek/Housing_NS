@@ -6,8 +6,6 @@ const Home = () => {
   return (
     <Container>
       <h1>Home</h1>
-      <Input placeholder={"test"} width={200} />
-      <Button>test</Button>
     </Container>
   );
 };

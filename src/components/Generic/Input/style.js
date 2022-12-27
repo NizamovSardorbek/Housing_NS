@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 
-
 const getType = ({type})=>{
  switch(type){
     case 'dark' : return {background : 'transparent',border: '1px solid white', color:'white'}
@@ -29,6 +28,7 @@ height: ${({height})=> height ? `${height}px`:'44px'};
 width: ${({width})=> width ? `${width}px`:'100%'};
 outline:none;
 border:1px solid #e6e9ec;
+padding-left:${({icon})=> icon ? "35px": "20px"};
 /* ${getType} */
 
 :active{
@@ -36,4 +36,18 @@ border:1px solid #e6e9ec;
 }
 `
 
-export {Container}
+const  Wrapper = styled.div`
+position: relative;
+display: flex;
+align-items: center;
+width: ${({width})=> width ? `${width}px`:'100%'};
+
+`
+
+
+const  Icon = styled.div`
+position: absolute;
+`
+
+
+export {Container , Wrapper,Icon }
