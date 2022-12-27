@@ -11,7 +11,7 @@ const Root = () => {
             return <Route key={id} path={path} element={element} />;
           })}
         </Route>
-        <Route path="/*" element={<h1>404 NOT FOUND</h1>} />
+        <Route path="/*" element={<h1>404 Not Found</h1>} />
         <Route path="/" element={<Navigate to={"/home"} />} />
       </Routes>
     </BrowserRouter>
